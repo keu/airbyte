@@ -8,7 +8,7 @@ on:
       repo:
         description: 'Repo to check out code from. Defaults to the main airbyte repo. Set this when building connectors from forked repos.'
         required: false
-        default: ${{ github.repository }}
+        default: ${{ github.event.repository.name }}
       comment-id:
         description: 'The comment-id of the slash command. Used to update the comment with the status.'
         required: false
