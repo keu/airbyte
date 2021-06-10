@@ -10,7 +10,7 @@ function write_standard_creds() {
   local cred_filename=${3:-config.json}
 
   [ -z "$connector_name" ] && error "Empty connector name"
-#   [ -z "$creds" ] && error "Creds not set for $connector_name"
+  [ -z "$creds" ] && echo "Creds not set for $connector_name"
 
   if [ "$connector_name" = "base-normalization" ]; then
     local secrets_dir="airbyte-integrations/bases/${connector_name}/secrets"
