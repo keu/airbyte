@@ -8,7 +8,6 @@
 ## Recommended reading order
 1. `x.java`
 2. `y.python`
-3. 
 
 ## Pre-merge Checklist
 Expand the checklist which is relevant for this PR. 
